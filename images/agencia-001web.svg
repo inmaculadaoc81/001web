@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGradOW" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF6FD"/>
+      <stop offset="1" stop-color="#F1E7F8"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7A23F"/>
+      <stop offset="0.5" stop-color="#E23A78"/>
+      <stop offset="1" stop-color="#2E0B5C"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A1668"/>
+      <stop offset="1" stop-color="#2E0B5C"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E23A78"/>
+      <stop offset="1" stop-color="#F7A23F"/>
+    </linearGradient>
+    <filter id="owSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#2E0B5C" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bgGradOW)"/>
+  <ellipse cx="600" cy="650" rx="430" ry="46" fill="#E7D9F2"/>
+
+  <!-- laptop / design mockup -->
+  <g filter="url(#owSoft)">
+    <rect x="330" y="220" width="440" height="290" rx="20" fill="url(#screenGrad)"/>
+    <rect x="356" y="246" width="388" height="196" rx="10" fill="#FFFFFF"/>
+    <rect x="374" y="264" width="150" height="18" rx="6" fill="url(#brandGrad)"/>
+    <rect x="374" y="292" width="220" height="10" rx="5" fill="#E7D9F2"/>
+    <rect x="374" y="310" width="180" height="10" rx="5" fill="#E7D9F2"/>
+    <circle cx="640" cy="330" r="46" fill="url(#brandGrad)" opacity="0.9"/>
+    <rect x="374" y="392" width="110" height="34" rx="17" fill="url(#brandGrad)"/>
+    <rect x="494" y="392" width="90" height="34" rx="17" fill="none" stroke="#D9C6E9" stroke-width="2"/>
+    <rect x="300" y="500" width="500" height="22" rx="10" fill="#241040"/>
+  </g>
+
+  <!-- growth chart card -->
+  <g filter="url(#owSoft)" transform="translate(800,300)">
+    <rect x="0" y="0" width="200" height="170" rx="18" fill="#FFFFFF"/>
+    <rect x="20" y="112" width="26" height="38" rx="6" fill="url(#chartGrad)"/>
+    <rect x="56" y="90" width="26" height="60" rx="6" fill="url(#chartGrad)"/>
+    <rect x="92" y="64" width="26" height="86" rx="6" fill="url(#chartGrad)"/>
+    <rect x="128" y="40" width="26" height="110" rx="6" fill="url(#chartGrad)"/>
+    <path d="M22 100 L60 76 L96 54 L150 24" fill="none" stroke="#2E0B5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M132 24 L150 24 L150 42" fill="none" stroke="#2E0B5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- automation gear + nodes -->
+  <g filter="url(#owSoft)" transform="translate(210,340)">
+    <circle cx="60" cy="60" r="58" fill="#FFFFFF"/>
+    <g fill="url(#brandGrad)">
+      <circle cx="60" cy="60" r="26"/>
+      <rect x="52" y="4" width="16" height="20" rx="6"/>
+      <rect x="52" y="96" width="16" height="20" rx="6"/>
+      <rect x="4" y="52" width="20" height="16" rx="6"/>
+      <rect x="96" y="52" width="20" height="16" rx="6"/>
+      <rect x="20" y="20" width="16" height="18" rx="6" transform="rotate(-45 28 29)"/>
+      <rect x="84" y="20" width="16" height="18" rx="6" transform="rotate(45 92 29)"/>
+      <rect x="20" y="84" width="16" height="18" rx="6" transform="rotate(45 28 93)"/>
+      <rect x="84" y="84" width="16" height="18" rx="6" transform="rotate(-45 92 93)"/>
+    </g>
+    <circle cx="60" cy="60" r="12" fill="#FFFFFF"/>
+  </g>
+
+  <!-- connecting dotted line + small nodes representing automation flow -->
+  <path d="M270 400 C 340 460, 420 480, 470 500" fill="none" stroke="#E23A78" stroke-width="4" stroke-dasharray="2 14" stroke-linecap="round"/>
+  <circle cx="470" cy="500" r="9" fill="#F7A23F"/>
+  <circle cx="270" cy="400" r="9" fill="#E23A78"/>
+
+  <!-- floating blob accents -->
+  <circle cx="960" cy="180" r="10" fill="#F7A23F"/>
+  <circle cx="1000" cy="220" r="6" fill="#E23A78"/>
+  <circle cx="250" cy="210" r="8" fill="#E23A78"/>
+  <circle cx="220" cy="250" r="5" fill="#F7A23F"/>
+  <circle cx="900" cy="560" r="7" fill="#2E0B5C"/>
+</svg>
