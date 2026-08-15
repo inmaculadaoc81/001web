@@ -7,7 +7,7 @@ export default async function handler(req,res){
   try{
     const body=req.body||{};if(body.website)return res.status(200).json({ok:true});
     const nombre=clean(body.nombre,MAX.nombre),telefono=clean(body.telefono,MAX.telefono),email=clean(body.email,MAX.email),modelo=clean(body.modelo,MAX.modelo),mensaje=clean(body.mensaje,MAX.mensaje);
-    if(!nombre||!email||!mensaje)return res.status(400).json({error:'Completa todos los campos obligatorios.'});
+    if(!nombre||!telefono||!email||!mensaje)return res.status(400).json({error:'Completa todos los campos obligatorios.'});
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return res.status(400).json({error:'Introduce un email válido.'});
     const clientId=process.env.GOOGLE_CLIENT_ID,clientSecret=process.env.GOOGLE_CLIENT_SECRET,refreshToken=process.env.GOOGLE_REFRESH_TOKEN,from=process.env.GOOGLE_EMAIL,to=process.env.CONTACT_EMAIL;
     if(!clientId||!clientSecret||!refreshToken||!from||!to){console.error('Faltan variables de entorno Gmail API');return res.status(500).json({error:'El formulario no está configurado correctamente.'})}
