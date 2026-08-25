@@ -1,5 +1,5 @@
 :root{
-  --orange:#F7A23F; --pink:#E23A78; --purple:#2E0B5C; --purple-2:#4B1B84;
+  --orange:#F7A23F; --pink:#E23A78; --purple:#2E0B5C; --purple-2:#4B1B84; --yellow:#FFD24C;
   --grad: linear-gradient(120deg, var(--orange), var(--pink) 52%, var(--purple));
   --ink:#20142E; --muted:#5f5570; --bg:#FFFFFF; --bg-soft:#FBF6FD; --bg-soft-2:#F3ECFA;
   --line:#EAE1F3; --line-dark:rgba(255,255,255,.14);
@@ -75,7 +75,7 @@ ul{margin:0;padding:0}
 .ow-eyebrow{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;color:#ffd9a8;font-family:var(--font-body)}
 .ow-eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange)}
 .ow-hero h1{font-size:clamp(25px,4vw,49px);line-height:1.06;letter-spacing:-.02em;margin:16px 0 18px;font-weight:800}
-.ow-hero h1 .ow-num{color:var(--purple)}
+.ow-hero h1 .ow-num{color:var(--yellow)}
 .ow-lead{font-size:17px;color:#e6d9f5;max-width:620px;font-family:var(--font-body)}
 .ow-hero-badges{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
 .ow-tag{padding:9px 18px;border-radius:99px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
@@ -145,7 +145,8 @@ ul{margin:0;padding:0}
 .ow-check-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0 28px}
 .ow-check-grid span{position:relative;background:var(--bg-soft-2);border-radius:12px;padding:11px 14px 11px 34px;font-size:13.5px;font-weight:600;display:block}
 .ow-check-grid span:before{content:"✓";position:absolute;left:13px;top:9px;color:var(--pink);font-weight:900}
-.ow-media{border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.ow-media{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);max-width:440px;margin:0 auto}
+.ow-media img{display:block;width:100%;height:auto}
 
 .ow-stepper{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:8px}
 .ow-step{position:relative;padding:24px 20px 20px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-soft);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
