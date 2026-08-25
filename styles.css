@@ -74,8 +74,8 @@ ul{margin:0;padding:0}
 .ow-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:50px;align-items:start}
 .ow-eyebrow{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;color:#ffd9a8;font-family:var(--font-body)}
 .ow-eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange)}
-.ow-hero h1{font-size:clamp(28px,4.4vw,54px);line-height:1.06;letter-spacing:-.02em;margin:16px 0 18px;font-weight:800}
-.ow-hero h1 .ow-num{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ow-hero h1{font-size:clamp(25px,4vw,49px);line-height:1.06;letter-spacing:-.02em;margin:16px 0 18px;font-weight:800}
+.ow-hero h1 .ow-num{color:var(--purple)}
 .ow-lead{font-size:17px;color:#e6d9f5;max-width:620px;font-family:var(--font-body)}
 .ow-hero-badges{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
 .ow-tag{padding:9px 18px;border-radius:99px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
@@ -267,6 +267,8 @@ details[open] .ow-faq-ic:after{transform:rotate(90deg);opacity:0}
 .ow-footer-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:34px;padding-top:18px;display:flex;justify-content:space-between;color:#6a5a80;font-size:12px}
 
 .ow-floating-wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 28px rgba(37,211,102,.4);z-index:9999}
+#n8n-chat .chat-window-toggle,#n8n-chat [class*="chat-window-toggle"]{position:fixed!important;right:20px!important;bottom:92px!important;z-index:10010!important;border:1px solid #fff!important}
+#n8n-chat .chat-window,#n8n-chat [class*="chat-window"]:not([class*="toggle"]){position:fixed!important;right:20px!important;bottom:162px!important;z-index:10050!important;max-height:calc(100vh - 190px)!important}
 .ow-mobile-actions{display:none}
 
 .reveal{opacity:0;transform:translateY(18px);transition:.6s ease}
@@ -296,7 +298,7 @@ details[open] .ow-faq-ic:after{transform:rotate(90deg);opacity:0}
   .ow-menu-toggle{display:flex}
   .ow-nav-wa{display:none}
   .ow-hero{padding:40px 0 96px}
-  .ow-hero h1{font-size:26px}
+  .ow-hero h1{font-size:23px}
   .ow-hero-actions{flex-direction:column}
   .ow-hero-actions .ow-btn{width:100%}
   .ow-split,.ow-contact-layout,.ow-footer-grid,.ow-proof-grid{grid-template-columns:1fr}
@@ -312,4 +314,6 @@ details[open] .ow-faq-ic:after{transform:rotate(90deg);opacity:0}
   .ow-mobile-actions a{min-height:52px;width:100%;max-width:420px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#fff;font-size:14px;font-weight:800;border-radius:99px}
   .ow-floating-wa{display:none}
   body{padding-bottom:74px}
+  #n8n-chat .chat-window-toggle,#n8n-chat [class*="chat-window-toggle"]{right:16px!important;bottom:90px!important}
+  #n8n-chat .chat-window,#n8n-chat [class*="chat-window"]:not([class*="toggle"]){left:12px!important;right:12px!important;width:auto!important;bottom:160px!important}
 }
