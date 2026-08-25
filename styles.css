@@ -298,6 +298,7 @@ details[open] .ow-faq-ic:after{transform:rotate(90deg);opacity:0}
   .ow-dropdown-cols{grid-template-columns:1fr}
   .ow-menu-toggle{display:flex}
   .ow-nav-wa{display:none}
+  .ow-topbar{display:none}
   .ow-hero{padding:40px 0 96px}
   .ow-hero h1{font-size:23px}
   .ow-hero-actions{flex-direction:column}
