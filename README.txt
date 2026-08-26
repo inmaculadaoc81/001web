@@ -55,3 +55,25 @@ AJUSTES VISUALES:
   tocado, ya que el pedido se refería específicamente al título.
 - H1 de portada reducido un 10%: clamp(28-54px) → clamp(25-49px) en
   escritorio, 26px → 23px en móvil (≤860px).
+
+GOOGLE ANALYTICS:
+G-JCR17PJG1D — no existía. Añadido en las 17 páginas HTML del sitio
+(index, aviso-legal, política de privacidad y las 14 páginas de
+/servicios/).
+
+REVISIÓN ADICIONAL (esta pasada):
+- Banner de cookies: ya existía y ya estaba corregido en un commit
+  anterior en las 17 páginas; no se ha tocado.
+- H1 de portada: el texto ya seguía el estilo correcto (afirmativo,
+  sin interrogación, sin condicionales, corto): "Tienes una web
+  bonita. Pero no te trae clientes." No se ha reescrito.
+- Tamaño del H1: NO se ha aumentado, a diferencia del resto de la
+  familia — aquí hay una decisión explícita anterior y documentada de
+  reducirlo un 10% (ver arriba), así que se ha respetado tal cual.
+- Sin .navcall: este sitio no muestra teléfono, solo WhatsApp y
+  formulario (por diseño, según la topbar "Contacto por WhatsApp y
+  formulario"); no aplica el fix de la píldora de teléfono.
+- Dominio 001web.es: sin colisión con ningún otro dominio revisado en
+  esta sesión.
+- Sitio multipágina activo (13 páginas /servicios/ sin eliminaciones
+  en el historial): NO se ha añadido middleware.mjs, no aplica.
