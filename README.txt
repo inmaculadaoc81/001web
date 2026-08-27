@@ -77,3 +77,11 @@ REVISIÓN ADICIONAL (esta pasada):
   esta sesión.
 - Sitio multipágina activo (13 páginas /servicios/ sin eliminaciones
   en el historial): NO se ha añadido middleware.mjs, no aplica.
+
+REVISIÓN ADICIONAL (a petición del cliente):
+- Quitado el párrafo .ow-lead bajo el H1 del hero ("Le pasa a más
+  negocios de los que crees...").
+- H1 en móvil (≤860px): aumentado de 23px a 34px, para que se vea más
+  grande (antes quedaba más pequeño que el mínimo del clamp de
+  escritorio). El tamaño en escritorio no se ha tocado, sigue
+  respetando la reducción del 10% ya documentada.
