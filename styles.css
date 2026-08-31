@@ -188,6 +188,8 @@ ul{margin:0;padding:0}
 .ow-form input,.ow-form textarea{width:100%;margin-top:7px;padding:13px 16px;border:1px solid var(--line);border-radius:12px;outline:none;font-family:var(--font-body)}
 .ow-form input:focus,.ow-form textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px rgba(226,58,120,.15)}
 .ow-consent{display:flex!important;gap:8px;align-items:flex-start;font-weight:500!important}
+.privacy-link{color:#0758a8;text-decoration:underline}
+.cal-frame{width:100%;height:720px;border:0;border-radius:16px;margin-top:20px}
 .ow-consent input{width:auto;margin-top:4px}
 .ow-consent a{color:var(--pink);text-decoration:underline}
 .hp-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
@@ -318,4 +320,5 @@ details[open] .ow-faq-ic:after{transform:rotate(90deg);opacity:0}
   body{padding-bottom:74px}
   #n8n-chat .chat-window-toggle,#n8n-chat [class*="chat-window-toggle"]{right:16px!important;bottom:90px!important}
   #n8n-chat .chat-window,#n8n-chat [class*="chat-window"]:not([class*="toggle"]){left:12px!important;right:12px!important;width:auto!important;bottom:160px!important}
+  .cal-frame{height:760px}
 }

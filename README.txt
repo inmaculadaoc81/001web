@@ -85,3 +85,54 @@ REVISIÓN ADICIONAL (a petición del cliente):
   grande (antes quedaba más pequeño que el mínimo del clamp de
   escritorio). El tamaño en escritorio no se ha tocado, sigue
   respetando la reducción del 10% ya documentada.
+
+REVISIÓN ADICIONAL (a petición del cliente):
+- BUG REAL — "no debe aparecer el correo de soporte@kelatos.com
+  visible en la web": el correo aparecía visible en varios sitios de
+  las 17 páginas del sitio, contradiciendo la nota de la propia
+  topbar ("Contacto por WhatsApp y formulario") y, en un caso, un
+  párrafo que decía literalmente "No abre ningún gestor de correo.
+  Solo atendemos por WhatsApp y formulario" justo encima de un enlace
+  mailto: con el correo visible. Corregido en todos los sitios donde
+  aparecía:
+  - index.html: en la sección de contacto, el enlace "Correo:
+    soporte@kelatos.com" se ha sustituido por "Formulario: Pide tu
+    asesoramiento" (ancla al propio formulario, #contactForm), ya que
+    el otro bloque de información de contacto de la misma página ya
+    usaba correctamente esta redacción.
+  - Las 17 páginas (footer "Información"): quitado el enlace
+    mailto:soporte@kelatos.com, dejando solo dirección y horario.
+  - Las 14 páginas de /servicios/: quitado el enlace mailto del
+    recuadro "¿Tienes un proyecto en mente?" (quedan WhatsApp y el
+    botón "Pide asesoramiento gratuito").
+  - politica-privacidad.html: el párrafo "puedes escribir a
+    soporte@kelatos.com" reescrito a "puedes escribirnos por WhatsApp
+    o a través del formulario de contacto de la web".
+  - aviso-legal.html: la línea "Contacto: soporte@kelatos.com" cambiada
+    a "Contacto: WhatsApp o formulario de contacto de la web".
+  - NO se ha tocado el campo "email" del schema.org (JSON-LD) en
+    index.html: es dato estructurado no visible en la página
+    renderizada, coherente con el resto de la familia (donde el
+    correo tampoco aparece nunca en el HTML visible, solo se usa en
+    /api/contacto y, cuando existe, en el schema).
+  - Verificado con una búsqueda completa en las 17 páginas: no queda
+    ninguna aparición visible de soporte@kelatos.com.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- BUG REAL — no existía ninguna sección de Cal.com en todo el sitio
+  (mismo hueco encontrado en LabsMkt, que parte de esta misma
+  plantilla base). Añadida en index.html, entre "Nosotros" y
+  "Contacto": "Reserva una cita de 30 minutos" con el iframe
+  compartido de la familia
+  (https://cal.com/kelatos/30min?embed=true&theme=light), 720px de
+  alto en escritorio y 760px en móvil. Añadido enlace "Pedir cita" al
+  menú en las 17 páginas (comparten la misma cabecera).
+- La casilla de política de privacidad del formulario enlazaba a la
+  página legal local (/politica-privacidad.html) en vez del enlace
+  estándar de la familia. Corregido a
+  https://kelatos.com/privacy-policy/, resaltado en azul.
+- Añadido "y días festivos" al aviso de horario cerrado en fin de
+  semana, en la caja de información de contacto de index.html.
+- No se ha añadido franja de aviso de servicio técnico independiente:
+  no aplica a este negocio (agencia de marketing digital, sin el
+  enfoque de reparación de equipos del resto de la familia).
