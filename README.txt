@@ -136,3 +136,24 @@ REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente)
 - No se ha añadido franja de aviso de servicio técnico independiente:
   no aplica a este negocio (agencia de marketing digital, sin el
   enfoque de reparación de equipos del resto de la familia).
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, 17 páginas — a petición del cliente, repo 46/48):
+- Verificado: enlace de Cal.com ya actualizado con attendeePhoneNumber
+  y overlayCalendar.
+- Verificado: el correo soporte@kelatos.com no aparece visible.
+- Verificado: el mensaje prellenado de WhatsApp ya usa "¡Hola
+  001Web!".
+- Verificado: el menú móvil (.ow-menu-toggle/.ow-nav) ya se cerraba
+  correctamente al pulsar un enlace, vía script.js compartido.
+- Verificado: sin iconos ni imágenes con proporciones fijas
+  incorrectas.
+- Verificado: el H1 en móvil ya está en 48px.
+- Verificado: los botones (.ow-btn) ya tenían border-radius:99px y
+  estados hover propios en las tres variantes (grad/light/outline).
+  No requerían cambios.
+- Verificado: sin patrón de franja de insignias bajo el H1 (familia
+  Dyson); no aplica la reubicación.
+- Confirmado de nuevo: no aplica la franja de aviso de servicio
+  técnico independiente (agencia de marketing, no reparación).
+- Sin cambios de código en este repo: todos los puntos del checklist
+  ya estaban aplicados en las 17 páginas.
