@@ -5,8 +5,28 @@
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/:wp(.*-sitemap\\d*\\.xml)",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/((?!(?:politica-privacidad\\.html|politica-privacidad|aviso-legal\\.html|package\\.json|aviso-legal|sitemap\\.xml|vercel\\.json|index\\.html|README\\.txt|robots\\.txt|styles\\.css|script\\.js|servicios|_vercel|package|sitemap|images|README|robots|script|styles|vercel|index|api)(?:[/.]|$)).+)",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
