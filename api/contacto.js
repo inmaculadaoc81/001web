@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "./_correo.js";
 
 const MAX={nombre:100,telefono:30,email:160,modelo:120,mensaje:3000};
 const clean=(v,max)=>String(v??'').trim().slice(0,max);
