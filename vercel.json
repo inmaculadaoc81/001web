@@ -1,6 +1,14 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "functions": {
+    "api/blog.js": { "includeFiles": "index.html" }
+  },
+  "rewrites": [
+    { "source": "/blog", "destination": "/api/blog" },
+    { "source": "/blog/:slug", "destination": "/api/blog?slug=:slug" },
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" }
+  ],
   "headers": [
     {
       "source": "/images/(.*)",
@@ -24,7 +32,7 @@
       "permanent": true
     },
     {
-      "source": "/((?!(?:politica-privacidad\\.html|politica-privacidad|aviso-legal\\.html|package\\.json|aviso-legal|sitemap\\.xml|vercel\\.json|index\\.html|README\\.txt|robots\\.txt|styles\\.css|script\\.js|servicios|_vercel|package|sitemap|images|README|robots|script|styles|vercel|index|api)(?:[/.]|$)).+)",
+      "source": "/((?!(?:blog|assets|politica-privacidad\\.html|politica-privacidad|aviso-legal\\.html|package\\.json|aviso-legal|sitemap\\.xml|vercel\\.json|index\\.html|README\\.txt|robots\\.txt|styles\\.css|script\\.js|servicios|_vercel|package|sitemap|images|README|robots|script|styles|vercel|index|api)(?:[/.]|$)).+)",
       "destination": "/",
       "permanent": true
     }
