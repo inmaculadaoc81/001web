@@ -29,6 +29,8 @@ export default async function handler(req,res){
   try{
     const body=req.body||{};
     if(body.website)return res.status(200).json({ok:true});
+    const ts=Number(body.ts);
+    if(!ts||Date.now()-ts<2000)return res.status(200).json({ok:true});
 
     const required=['SMTP_HOST','SMTP_PORT','SMTP_USER','SMTP_PASS'];
     const missing=required.filter(k=>!process.env[k]);
